@@ -133,7 +133,7 @@ async function copy(text){
 
 $('send').onclick=()=>{
   if(!choice) return;
-  const text = "❓ "+QUESTION+"\n💬 Мой ответ: "+$('answer').value.trim()+"\n\n❓ "+HUG+"\n💬 Мой ответ: "+choice;
+  const text = " : "+QUESTION+"\n Мой ответ: "+$('answer').value.trim()+"\n\n "+HUG+"\n Мой ответ: "+choice;
   copy(text);
   const url="https://wa.me/"+PHONE+"?text="+encodeURIComponent(text);
   const a=document.createElement('a'); a.href=url; a.target="_blank"; a.rel="noopener";
